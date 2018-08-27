@@ -1,0 +1,39 @@
+.mySection{
+    margin-top:20px;
+}
+.my-card{
+    margin:5px;
+}
+.remove-btn{
+    float:right;
+    background:none;
+    font-size: 21px;
+    font-weight: bold;
+    line-height:1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity:0.3;
+    top: 1px;
+    right: 15px;
+    position:absolute;
+}
+.update-btn{
+    float:right;
+    background:none;
+    font-size: 21px;
+    line-height:1;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity:0.3;
+    top: -20px;
+    right: 0px;
+    position:relative;
+}
+.form-container{
+    border:1px solid #ccc;
+    padding:25px;
+}
+.submit{
+    float:right
+}

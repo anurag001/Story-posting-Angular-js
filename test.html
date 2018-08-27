@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <section  ng-controller="Note">
+            <div>TODO write content</div>
+            <input type="text" ng-model="name">
+            <input type="text" ng-model="story">
+            <button ng-click="func()">Click</button>
+            <p>{{name}}</p>
+            <p>{{story}}</p>
+        </section>
+    </body>
+    <script>
+        angular.module('myApp', [])
+                .controller('Note', ['$scope', '$rootScope', '$http', '$compile', '$timeout', function ($scope, $rootScope, $http, $compile, $timeout) {
+                
+                    $scope.name="hi i am text";
+                    $scope.story="I am story";
+                    $scope.func = function(){
+                       console.log($scope.name);
+                    };
+                }]);
+    </script>
+</html>
